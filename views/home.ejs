@@ -1,0 +1,22 @@
+<!-- HOME PAGE -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("./layouts/header.ejs") %>
+  <body>
+    <nav>
+      <div class="logo">LOGO</div>
+      <div class="menu">
+        <a href="api/users/logout">Logout</a>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="container-fluid">
+            <h2>User Profile</h2>
+            <img src="/assets/profile.png" />
+            <h3>Name :<%= user.name%></h3>
+            <h3>Email :<%= user.email%>  </h3>
+          </div>
+    </div>
+    <%- include("./layouts/footer.ejs") %>
